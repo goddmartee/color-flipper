@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Color Flipper</title>
+		<style>
+			*,
+			*::after,
+			*::before {
+				box-sizing: border-box;
+			}
+
+			body {
+				margin: 0;
+			}
+
+			main {
+				background-color: rgb(174 60 183);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				min-height: 100vh;
+				min-height: 100svh;
+				font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+					'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			}
+
+			h1 {
+				margin: 0;
+				color: rgb(255 255 255);
+				text-align: center;
+				font-size: 3rem;
+			}
+
+			pre {
+				padding: 0.786rem 0.8rem;
+				border-radius: 0.3rem;
+				background-color: rgb(21 21 21);
+				color: white;
+				width: auto;
+				text-align: center;
+				font-size: 1.5rem;
+			}
+
+			button {
+				background-color: rgba(255 255 255 / 0.35);
+				border-radius: 0.5rem;
+				border-style: none;
+				color: rgb(0 0 0);
+				cursor: pointer;
+				font-size: 0.875rem;
+				font-weight: 500;
+				line-height: 1.25rem;
+				padding: 0.625rem 0.75rem;
+				text-align: center;
+				transition-duration: 100ms;
+			}
+
+			button:active {
+				transform: scale(1.1);
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<h1>Color Flipper</h1>
+			<pre>background-color: <span>rgb(174, 60, 183)</span></pre>
+			<button type="button">Flip Color</button>
+		</main>
+		<script src="./main.js"></script>
+	</body>
+</html>
